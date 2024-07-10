@@ -1,0 +1,14 @@
+programa
+"Este programa imprime 'Olá, mundo!' 5 vezes."
+
+var
+texto mensagem;
+
+{
+mensagem: "Olá, mundo!";
+repita(5) {
+mostrar(mensagem);
+}
+}
+
+NoInterno(op="alg", block=NoInterno(op="block", statementList=NoInterno(op="statementList", prox=NoInterno(op="statementList", prox=None, statement=NoInterno(op="repeatStatement", block=NoInterno(op="block", statementList=NoInterno(op="statementList", prox=None, statement=NoInterno(op="FUNCOUT", linha=10, params=[NoInterno(op="factor", dir=None, esq=None, factor=NoFolha(op="id", valor="mensagem", linha=10), sinal=NoFolha(op="OPSUM", valor="+", linha=10))], valor="mostrar"))), expression=NoInterno(op="factor", dir=None, esq=None, factor=NoFolha(op="num", valor="5", linha=9), sinal=NoFolha(op="OPSUM", valor="+", linha=9)))), statement=NoInterno(op="assignStatement", id=NoFolha(op="id", valor="mensagem", linha=8), str_statement=NoFolha(op="str", valor="Olá, mundo!", linha=8)))), declarations=NoInterno(op="varDeclarationList", prox=None, varDeclaration=NoInterno(op="varDeclaration", identifierList=NoInterno(op="identifierList", id=NoFolha(op="id", valor="mensagem", linha=5), prox=None), type=NoFolha(op="type", valor="texto", linha=5))), id=NoFolha(op="id", valor="Este programa imprime 'Olá, mundo!' 5 vezes.", linha=2), str_statement=NoFolha(op="str", valor="Este programa imprime 'Olá, mundo!' 5 vezes.", linha=2))

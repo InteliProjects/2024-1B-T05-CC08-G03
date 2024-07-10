@@ -1,0 +1,31 @@
+programa "Dinâmica do jogo"
+var
+numero objeto0;
+numero objeto1;
+numero objeto2;
+numero objeto3;
+numero quadrante;
+
+{
+objeto0: criar_imagem("../../uploads/cachorro.webp", 1, 1);
+objeto1: criar_imagem("../../uploads/leaozinho.png", 1, 1);
+objeto2: criar_figura("hexagono", "0x2642cf", 5, 5, 10);
+objeto3: criar_imagem("../../uploads/Captura de tela 2023-10-30 173838.png", 1, 1);
+
+enquanto(v){
+quadrante: consultar();
+
+se (quadrante = 1) {
+mover(objeto0, 2, 2);
+}
+se (quadrante = 3) {
+mover(objeto1, 3, 3);
+}
+se (quadrante = 9) {
+mover(objeto3, 5, 4);
+tocar("../../uploads/lion-roar-6011.mp3");
+}
+}
+
+}
+

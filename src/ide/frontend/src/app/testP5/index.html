@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      body {
+        font-family: Helvetica;
+      }
+      #top-right {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        font-family: Helvetica;
+      }
+      .button:hover {
+        background-color: #45a049;
+        transform: translateY(-2px);
+      }
+      .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+        padding-top: 60px;
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        font-family: Helvetica;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .modal input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: Helvetica;
+      }
+      .modal button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Helvetica;
+      }
+      .modal button:hover {
+        background-color: #45a049;
+      }
+      .modal #descricaoAtendimento {
+        height: 150px;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: Helvetica;
+      }
+    </style>
+  </head>
+  <body style="display:flex; flex-direction:column; position: relative;">
+    <h1 align="center">P5 Canvas</h1>
+    <main style="margin:auto"></main>
+    <div id="top-right">
+      <button class="button" id="reportBtn">Gerar Relatório</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Gerar Relatório</h2>
+        <form id="reportForm">
+          <label for="nomeTO">Nome da TO:</label>
+          <input type="text" id="nomeTO" name="nomeTO">
+          
+          <label for="nomePaciente">Nome do Paciente:</label>
+          <input type="text" id="nomePaciente" name="nomePaciente">
+          
+          <label for="descricaoAtendimento">Descrição do Atendimento:</label>
+          <label for="descricaoAtendimento">Descrição do Atendimento:</label>
+          <textarea id="descricaoAtendimento" name="descricaoAtendimento"></textarea>
+          
+          <label for="dataAtendimento">Data do Atendimento:</label>
+          <input type="date" id="dataAtendimento" name="dataAtendimento">
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div id="msg"></div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+  
+      // Get the button that opens the modal
+      var btn = document.getElementById("reportBtn");
+  
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+  
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+  
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+  
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  
+      // Quando o formulário é enviado
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("reportForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Evita a submissão padrão do formulário
+          
+          var nomePaciente = document.getElementById("nomePaciente").value;
+          var descricaoAtendimento = document.getElementById("descricaoAtendimento").value;
+          var dataAtendimento = document.getElementById("dataAtendimento").value;
+  
+          var relatorio = "Relatório da consulta de " + nomePaciente + ", data: " + dataAtendimento + "\n\n";
+          relatorio += "Descrição: " + descricaoAtendimento;
+          relatorio += "\n\n";
+          relatorio += "Feito por: " + document.getElementById("nomeTO").value;
+
+          var nomeArquivo =  nomePaciente + dataAtendimento + ".txt"
+  
+          var downloadLink = document.createElement("a");
+          downloadLink.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(relatorio));
+          downloadLink.setAttribute("download", nomeArquivo);
+  
+          document.body.appendChild(downloadLink);
+  
+          downloadLink.click();
+  
+          document.body.removeChild(downloadLink);
+
+          window.location.reload();
+        });
+      });
+    </script>
+    <script src="lib.js"></script>
+    <script src="script.js"></script>
+    <script src="p5.collide2d.min.js"></script>
+  </body>
+  </html>

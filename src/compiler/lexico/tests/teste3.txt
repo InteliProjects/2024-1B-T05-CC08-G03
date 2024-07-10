@@ -1,0 +1,33 @@
+programa
+"Este programa é mais complexo que o primeiro"
+var
+    numero a, b, soma;
+    binario c, aconteceu;
+    texto s;
+{
+    x : 0;
+    y : -2; # ignore este comentário
+    soma : x + y;
+    /#
+    Seu analisador deve ignorar essas linhas, mas ao mesmo tempo
+precisa contá-las, mesmo que estejam dentro de um comentário.
+    #/
+    c : f;
+    s : "Programar em FOFI é muito divertido";
+    se (soma < x^2 e (y <= -2 ou c = v)){
+        aconteceu : nao c;
+        mostrar(s);
+    }
+    senao{
+        # esta linha deve ser ignorada e contabilizada
+        x = consultar();
+        repita(5) {
+            x : 16;
+            enquanto (x != 0 && y < 0){
+                mostrar(x);
+                x : x / 2;
+            }
+        }
+    }
+    y : aleatorio(-10, 2);
+}

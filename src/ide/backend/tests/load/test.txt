@@ -1,0 +1,36 @@
+programa
+"Descrição do programa (como uma string)
+Nesta seção, você poderá escrever um texto de múltiplas linhas,
+descrevendo o funcionamento básico do programa e dando instruções ao
+usuário da aplicação. Esse texto deverá aparecer em algum lugar na
+interface desenvolvida por vocês."
+
+/# Este é um
+comentário de
+múltiplas linhas #/
+# Comentário de uma única linha
+# Abaixo fica a seção de declaração de variáveis
+var
+numero x, y, z; # ou seja, x, y e z são do tipo numero (inteiro)
+texto a, b;
+{
+x: 0;
+y: 5;
+a: "ola";
+b: "mundo";
+se (a = b e b != a){
+mostrar("Ola");
+}
+senao{ # o bloco senao é opcional
+mostrar("nao sei");
+}
+enquanto (x < y){
+x: x + 1;
+mostrar(x);
+}
+repita(10) {
+/# o que estiver aqui dentro será repetido 10 vezes.
+Note que não há variável de controle dentro deste bloco
+#/
+}
+}

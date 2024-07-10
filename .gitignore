@@ -1,0 +1,12 @@
+**/.vscode/
+**/*.pyc
+**/__pycache__/
+**/node_modules/
+src/ide/backend/tests/tmp/
+**/.venv/
+**/bin/
+src/compiler/functions/package-lock.json
+src/compiler/functions/package.json
+src/ide/backend/**/tmp
+src/ide/backend/tests/tmp/tests
+src/ide/frontend/node_modules/

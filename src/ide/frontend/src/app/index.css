@@ -1,0 +1,85 @@
+/* globals.css */
+
+.dndflow {
+  display: flex;
+  height: 100vh; /* Garante que ocupe toda a altura da janela */
+  overflow: hidden; /* Impede a rolagem na página principal */
+}
+
+.dndflow aside {
+  height: 100vh; /* Garante que a sidebar ocupe toda a altura da janela */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical na sidebar */
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+  width: 20%; /* Largura fixa para a sidebar */
+  max-width: 250px;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  min-height: 20px; /* Altura mínima para pequenos labels */
+  padding: 8px; /* Aumentado para melhor legibilidade */
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  white-space: pre-wrap; /* Mantém quebras de linha e espaços */
+  word-break: break-word; /* Quebra palavras longas */
+  min-width: 100px; /* Largura mínima */
+  max-width: 300px; /* Largura máxima para evitar nós muito largos */
+  width: auto; /* Permite que a largura se ajuste ao conteúdo */
+  border: 1px solid #ccc; /* Adiciona uma borda padrão */
+  border-radius: 5px; /* Borda arredondada */
+  background: #ffffff00; /* Cor de fundo branca */
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .dndnode:focus {
+  outline: 2px solid #000; /* Adiciona um contorno visível para foco */
+  background: #e0e0e0; /* Muda a cor de fundo quando focado */
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100vh; /* Garante que o canvas ocupe toda a altura da janela */
+  overflow: hidden; /* Impede a rolagem no canvas */
+  position: relative; /* Garante que o React Flow ocupe todo o espaço disponível */
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+button:focus {
+  outline: 3px solid #130d0d; /* Adiciona um contorno visível para foco */
+}
+
+@media screen and (max-width: 767px) {
+  .dndflow {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .dndflow aside {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .dndflow .reactflow-wrapper {
+    height: calc(100vh - 250px);
+  }
+}

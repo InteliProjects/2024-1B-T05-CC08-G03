@@ -1,0 +1,38 @@
+programa "Dinâmica do jogo"
+var
+numero objeto0;
+numero objeto1;
+numero quadrante;
+{
+objeto0: criar_imagem("cachorro.webp", 2, 2);
+enquanto(v){
+quadrante: consultar();
+se (quadrante = 1) {
+mover(objeto0, 3, 0);
+}
+se (quadrante = 2) {
+tocar("reFabio.ogg");
+}
+}
+}
+
+
+programa
+"Exemplo grande de geração de código."
+var
+numero x, obj;
+texto msg;
+{
+msg : "Programar em Fofi é muito fácil";
+x : (2^3^4) / 2;
+se (v) {
+obj : criar_imagem("leao.jpg", x*2, 2^5);
+} senao {
+obj : criar_imagem("cachorro.jpg", x+2*3, 100-1);
+x : 1;
+repita(3) {
+mover(obj, x, 99);
+x : x + 10;
+}
+}
+}

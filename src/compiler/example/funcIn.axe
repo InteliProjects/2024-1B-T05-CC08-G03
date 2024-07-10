@@ -1,0 +1,64 @@
+programa
+"Este programa verifica se um número é maior que 10."
+
+var
+    numero x, a, b;
+    binario bin;
+    texto z;
+{
+x:ler_numero("insira um numero");
+x:ler_binario("insira um valor");
+x:ler();
+x:consultar();
+bin: colidiu(a,b);
+redefinir_figura(x, "circulo", "cor", x, y, 10);
+x:criar_figura("circulo", "cor", x, y, 10);
+a: --2;
+}
+
+
+NoInterno(op="alg", 
+str_statement=
+    NoFolha(op="str", valor="Este programa verifica se um número é maior que 10.", linha=2),
+block=
+    NoInterno(op="block", 
+    statementList=
+        NoInterno(op="statementList", 
+        statement=
+            NoInterno(op="assignStatement", 
+            id=
+                NoFolha(op="id", valor="x", linha=8),
+            inStatement=
+                NoInterno(op="FUNCIN", 
+                valor=
+                    "ler_numero",
+                linha=
+                    8,
+                params=
+                    [NoFolha(op="str", valor="insira um numero", linha=8)]
+                )
+            ),
+        prox=
+            None
+        )
+    ),
+declarations=
+    NoInterno(op="varDeclarationList", 
+    varDeclaration=
+        NoInterno(op="varDeclaration", 
+        type=
+            NoFolha(op="type", valor="numero", linha=5),
+        identifierList=
+            NoInterno(op="identifierList", 
+            id=
+                NoFolha(op="id", valor="x", linha=5),
+            prox=
+                None
+            )
+        ),
+    prox=
+        None
+    ),
+id=
+    NoFolha(op="id", valor="Este programa verifica se um número é maior que 10.", linha=2)
+)

@@ -1,0 +1,755 @@
+programa
+"Este programa é mais complexo que o primeiro"
+var 
+   numero a, b, soma;
+   binario c, aconteceu;
+   texto s;
+
+{
+    a : 0;
+    b : -2;   # ignore este comentário
+    soma : a + b;
+    /# 
+      este é um comentário
+      de múltiplas linhas
+    #/
+    c : f;
+    s : "Programar em FOFI é muito divertido";
+    se ((soma < a^2) e ((b <= -2) ou (c = v))) {
+       aconteceu : nao c;
+       mostrar(s);
+    }
+    senao {
+       # esta linha deve ser ignorada e contabilizada
+       b : consultar();
+       repita(5) {
+          soma : 16 + 2 * 3 - b;
+          enquanto (SOMA != 0) {
+             mostrar(a);
+             mostrar("a");
+             sOmA : (b ^ 3 ^ 4) / a;
+          }
+       }
+    }
+    a : aleatorio(-10, 2);
+
+}
+
+
+NoInterno(op="alg", 
+str_statement=
+    NoFolha(op="str", valor="Este programa é mais complexo que o primeiro", linha=2),
+block=
+    NoInterno(op="block", 
+    statementList=
+        NoInterno(op="statementList", 
+        statement=
+            NoInterno(op="assignStatement", 
+            id=
+                NoFolha(op="id", valor="a", linha=9),
+            expression=
+                NoInterno(op="expression", 
+                oper=
+                    None,
+                esq=
+                    NoInterno(op="factor", 
+                    sinal=
+                        NoFolha(op="OPSUM", valor="+", linha=9),
+                    esq=
+                        None,
+                    dir=
+                        None,
+                    factor=
+                        NoFolha(op="num", valor="0", linha=9)
+                    ),
+                dir=
+                    None
+                )
+            ),
+        prox=
+            NoInterno(op="statementList", 
+            statement=
+                NoInterno(op="assignStatement", 
+                id=
+                    NoFolha(op="id", valor="b", linha=10),
+                expression=
+                    NoInterno(op="expression", 
+                    oper=
+                        None,
+                    esq=
+                        NoInterno(op="factor", 
+                        sinal=
+                            NoFolha(op="OPSUM", valor="-", linha=10),
+                        esq=
+                            NoInterno(op="factor", 
+                            sinal=
+                                NoFolha(op="OPSUM", valor="+", linha=10),
+                            esq=
+                                None,
+                            dir=
+                                None,
+                            factor=
+                                NoFolha(op="num", valor="2", linha=10)
+                            ),
+                        dir=
+                            None
+                        ),
+                    dir=
+                        None
+                    )
+                ),
+            prox=
+                NoInterno(op="statementList", 
+                statement=
+                    NoInterno(op="assignStatement", 
+                    id=
+                        NoFolha(op="id", valor="soma", linha=11),
+                    expression=
+                        NoInterno(op="expression", 
+                        oper=
+                            None,
+                        esq=
+                            NoInterno(op="sum_expression", 
+                            oper=
+                                "+",
+                            esq=
+                                NoInterno(op="factor", 
+                                sinal=
+                                    NoFolha(op="OPSUM", valor="+", linha=11),
+                                esq=
+                                    None,
+                                dir=
+                                    None,
+                                factor=
+                                    NoFolha(op="id", valor="a", linha=11)
+                                ),
+                            dir=
+                                NoInterno(op="factor", 
+                                sinal=
+                                    NoFolha(op="OPSUM", valor="+", linha=11),
+                                esq=
+                                    None,
+                                dir=
+                                    None,
+                                factor=
+                                    NoFolha(op="id", valor="b", linha=11)
+                                )
+                            ),
+                        dir=
+                            None
+                        )
+                    ),
+                prox=
+                    NoInterno(op="statementList", 
+                    statement=
+                        NoInterno(op="assignStatement", 
+                        id=
+                            NoFolha(op="id", valor="c", linha=16),
+                        expression=
+                            NoInterno(op="expression", 
+                            oper=
+                                None,
+                            esq=
+                                NoInterno(op="factor", 
+                                sinal=
+                                    NoFolha(op="OPSUM", valor="+", linha=16),
+                                esq=
+                                    None,
+                                dir=
+                                    None,
+                                factor=
+                                    NoFolha(op="log", valor="f", linha=16)
+                                ),
+                            dir=
+                                None
+                            )
+                        ),
+                    prox=
+                        NoInterno(op="statementList", 
+                        statement=
+                            NoInterno(op="assignStatement", 
+                            id=
+                                NoFolha(op="id", valor="s", linha=17),
+                            str_statement=
+                                NoFolha(op="str", valor="Programar em FOFI é muito divertido", linha=17)
+                            ),
+                        prox=
+                            NoInterno(op="statementList", 
+                            statement=
+                                NoInterno(op="ifStatement", 
+                                expression=
+                                    NoInterno(op="expression", 
+                                    oper=
+                                        None,
+                                    esq=
+                                        NoInterno(op="multiplicative_term", 
+                                        oper=
+                                            "e",
+                                        esq=
+                                            NoInterno(op="factor", 
+                                            sinal=
+                                                NoFolha(op="OPSUM", valor="+", linha=18),
+                                            esq=
+                                                None,
+                                            dir=
+                                                None,
+                                            expression=
+                                                NoInterno(op="expression", 
+                                                oper=
+                                                    "<",
+                                                esq=
+                                                    NoInterno(op="factor", 
+                                                    sinal=
+                                                        NoFolha(op="OPSUM", valor="+", linha=18),
+                                                    esq=
+                                                        None,
+                                                    dir=
+                                                        None,
+                                                    factor=
+                                                        NoFolha(op="id", valor="soma", linha=18)
+                                                    ),
+                                                dir=
+                                                    NoInterno(op="power_term", 
+                                                    oper=
+                                                        "^",
+                                                    esq=
+                                                        NoInterno(op="factor", 
+                                                        sinal=
+                                                            NoFolha(op="OPSUM", valor="+", linha=18),
+                                                        esq=
+                                                            None,
+                                                        dir=
+                                                            None,
+                                                        factor=
+                                                            NoFolha(op="id", valor="a", linha=18)
+                                                        ),
+                                                    dir=
+                                                        NoInterno(op="factor", 
+                                                        sinal=
+                                                            NoFolha(op="OPSUM", valor="+", linha=18),
+                                                        esq=
+                                                            None,
+                                                        dir=
+                                                            None,
+                                                        factor=
+                                                            NoFolha(op="num", valor="2", linha=18)
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                        dir=
+                                            NoInterno(op="factor", 
+                                            sinal=
+                                                NoFolha(op="OPSUM", valor="+", linha=18),
+                                            esq=
+                                                None,
+                                            dir=
+                                                None,
+                                            expression=
+                                                NoInterno(op="expression", 
+                                                oper=
+                                                    None,
+                                                esq=
+                                                    NoInterno(op="sum_expression", 
+                                                    oper=
+                                                        "ou",
+                                                    esq=
+                                                        NoInterno(op="factor", 
+                                                        sinal=
+                                                            NoFolha(op="OPSUM", valor="+", linha=18),
+                                                        esq=
+                                                            None,
+                                                        dir=
+                                                            None,
+                                                        expression=
+                                                            NoInterno(op="expression", 
+                                                            oper=
+                                                                "<=",
+                                                            esq=
+                                                                NoInterno(op="factor", 
+                                                                sinal=
+                                                                    NoFolha(op="OPSUM", valor="+", linha=18),
+                                                                esq=
+                                                                    None,
+                                                                dir=
+                                                                    None,
+                                                                factor=
+                                                                    NoFolha(op="id", valor="b", linha=18)
+                                                                ),
+                                                            dir=
+                                                                NoInterno(op="factor", 
+                                                                sinal=
+                                                                    NoFolha(op="OPSUM", valor="-", linha=18),
+                                                                esq=
+                                                                    NoInterno(op="factor", 
+                                                                    sinal=
+                                                                        NoFolha(op="OPSUM", valor="+", linha=18),
+                                                                    esq=
+                                                                        None,
+                                                                    dir=
+                                                                        None,
+                                                                    factor=
+                                                                        NoFolha(op="num", valor="2", linha=18)
+                                                                    ),
+                                                                dir=
+                                                                    None
+                                                                )
+                                                            )
+                                                        ),
+                                                    dir=
+                                                        NoInterno(op="factor", 
+                                                        sinal=
+                                                            NoFolha(op="OPSUM", valor="+", linha=18),
+                                                        esq=
+                                                            None,
+                                                        dir=
+                                                            None,
+                                                        expression=
+                                                            NoInterno(op="expression", 
+                                                            oper=
+                                                                "=",
+                                                            esq=
+                                                                NoInterno(op="factor", 
+                                                                sinal=
+                                                                    NoFolha(op="OPSUM", valor="+", linha=18),
+                                                                esq=
+                                                                    None,
+                                                                dir=
+                                                                    None,
+                                                                factor=
+                                                                    NoFolha(op="id", valor="c", linha=18)
+                                                                ),
+                                                            dir=
+                                                                NoInterno(op="factor", 
+                                                                sinal=
+                                                                    NoFolha(op="OPSUM", valor="+", linha=18),
+                                                                esq=
+                                                                    None,
+                                                                dir=
+                                                                    None,
+                                                                factor=
+                                                                    NoFolha(op="log", valor="v", linha=18)
+                                                                )
+                                                            )
+                                                        )
+                                                    ),
+                                                dir=
+                                                    None
+                                                )
+                                            )
+                                        ),
+                                    dir=
+                                        None
+                                    ),
+                                blockIf=
+                                    NoInterno(op="block", 
+                                    statementList=
+                                        NoInterno(op="statementList", 
+                                        statement=
+                                            NoInterno(op="assignStatement", 
+                                            id=
+                                                NoFolha(op="id", valor="aconteceu", linha=19),
+                                            expression=
+                                                NoInterno(op="expression", 
+                                                oper=
+                                                    None,
+                                                esq=
+                                                    NoInterno(op="factor", 
+                                                    sinal=
+                                                        NoFolha(op="nao", valor="nao", linha=19),
+                                                    esq=
+                                                        NoInterno(op="factor", 
+                                                        sinal=
+                                                            NoFolha(op="OPSUM", valor="+", linha=19),
+                                                        esq=
+                                                            None,
+                                                        dir=
+                                                            None,
+                                                        factor=
+                                                            NoFolha(op="id", valor="c", linha=19)
+                                                        ),
+                                                    dir=
+                                                        None
+                                                    ),
+                                                dir=
+                                                    None
+                                                )
+                                            ),
+                                        prox=
+                                            NoInterno(op="statementList", 
+                                            statement=
+                                                NoInterno(op="FUNCOUT", 
+                                                valor=
+                                                    "mostrar",
+                                                linha=
+                                                    20,
+                                                params=
+                                                    [NoInterno(op="factor", sinal=NoFolha(op="OPSUM", valor="+", linha=20), esq=None, dir=None, factor=NoFolha(op="id", valor="s", linha=20))]
+                                                ),
+                                            prox=
+                                                None
+                                            )
+                                        )
+                                    ),
+                                blockElse=
+                                    NoInterno(op="block", 
+                                    statementList=
+                                        NoInterno(op="statementList", 
+                                        statement=
+                                            NoInterno(op="assignStatement", 
+                                            id=
+                                                NoFolha(op="id", valor="b", linha=24),
+                                            inStatement=
+                                                NoInterno(op="FUNCIN", 
+                                                valor=
+                                                    "consultar",
+                                                linha=
+                                                    24,
+                                                params=
+                                                    []
+                                                )
+                                            ),
+                                        prox=
+                                            NoInterno(op="statementList", 
+                                            statement=
+                                                NoInterno(op="repeatStatement", 
+                                                expression=
+                                                    NoInterno(op="factor", 
+                                                    sinal=
+                                                        NoFolha(op="OPSUM", valor="+", linha=25),
+                                                    esq=
+                                                        None,
+                                                    dir=
+                                                        None,
+                                                    factor=
+                                                        NoFolha(op="num", valor="5", linha=25)
+                                                    ),
+                                                block=
+                                                    NoInterno(op="block", 
+                                                    statementList=
+                                                        NoInterno(op="statementList", 
+                                                        statement=
+                                                            NoInterno(op="assignStatement", 
+                                                            id=
+                                                                NoFolha(op="id", valor="soma", linha=26),
+                                                            expression=
+                                                                NoInterno(op="expression", 
+                                                                oper=
+                                                                    None,
+                                                                esq=
+                                                                    NoInterno(op="sum_expression", 
+                                                                    oper=
+                                                                        "-",
+                                                                    esq=
+                                                                        NoInterno(op="sum_expression", 
+                                                                        oper=
+                                                                            "+",
+                                                                        esq=
+                                                                            NoInterno(op="factor", 
+                                                                            sinal=
+                                                                                NoFolha(op="OPSUM", valor="+", linha=26),
+                                                                            esq=
+                                                                                None,
+                                                                            dir=
+                                                                                None,
+                                                                            factor=
+                                                                                NoFolha(op="num", valor="16", linha=26)
+                                                                            ),
+                                                                        dir=
+                                                                            NoInterno(op="multiplicative_term", 
+                                                                            oper=
+                                                                                "*",
+                                                                            esq=
+                                                                                NoInterno(op="factor", 
+                                                                                sinal=
+                                                                                    NoFolha(op="OPSUM", valor="+", linha=26),
+                                                                                esq=
+                                                                                    None,
+                                                                                dir=
+                                                                                    None,
+                                                                                factor=
+                                                                                    NoFolha(op="num", valor="2", linha=26)
+                                                                                ),
+                                                                            dir=
+                                                                                NoInterno(op="factor", 
+                                                                                sinal=
+                                                                                    NoFolha(op="OPSUM", valor="+", linha=26),
+                                                                                esq=
+                                                                                    None,
+                                                                                dir=
+                                                                                    None,
+                                                                                factor=
+                                                                                    NoFolha(op="num", valor="3", linha=26)
+                                                                                )
+                                                                            )
+                                                                        ),
+                                                                    dir=
+                                                                        NoInterno(op="factor", 
+                                                                        sinal=
+                                                                            NoFolha(op="OPSUM", valor="+", linha=26),
+                                                                        esq=
+                                                                            None,
+                                                                        dir=
+                                                                            None,
+                                                                        factor=
+                                                                            NoFolha(op="id", valor="b", linha=26)
+                                                                        )
+                                                                    ),
+                                                                dir=
+                                                                    None
+                                                                )
+                                                            ),
+                                                        prox=
+                                                            NoInterno(op="statementList", 
+                                                            statement=
+                                                                NoInterno(op="WhileStatement", 
+                                                                expression=
+                                                                    NoInterno(op="expression", 
+                                                                    oper=
+                                                                        "!=",
+                                                                    esq=
+                                                                        NoInterno(op="factor", 
+                                                                        sinal=
+                                                                            NoFolha(op="OPSUM", valor="+", linha=27),
+                                                                        esq=
+                                                                            None,
+                                                                        dir=
+                                                                            None,
+                                                                        factor=
+                                                                            NoFolha(op="id", valor="SOMA", linha=27)
+                                                                        ),
+                                                                    dir=
+                                                                        NoInterno(op="factor", 
+                                                                        sinal=
+                                                                            NoFolha(op="OPSUM", valor="+", linha=27),
+                                                                        esq=
+                                                                            None,
+                                                                        dir=
+                                                                            None,
+                                                                        factor=
+                                                                            NoFolha(op="num", valor="0", linha=27)
+                                                                        )
+                                                                    ),
+                                                                block=
+                                                                    NoInterno(op="block", 
+                                                                    statementList=
+                                                                        NoInterno(op="statementList", 
+                                                                        statement=
+                                                                            NoInterno(op="FUNCOUT", 
+                                                                            valor=
+                                                                                "mostrar",
+                                                                            linha=
+                                                                                28,
+                                                                            params=
+                                                                                [NoInterno(op="factor", sinal=NoFolha(op="OPSUM", valor="+", linha=28), esq=None, dir=None, factor=NoFolha(op="id", valor="a", linha=28))]
+                                                                            ),
+                                                                        prox=
+                                                                            NoInterno(op="statementList", 
+                                                                            statement=
+                                                                                NoInterno(op="FUNCOUT", 
+                                                                                valor=
+                                                                                    "mostrar",
+                                                                                linha=
+                                                                                    29,
+                                                                                params=
+                                                                                    [NoFolha(op="str", valor="a", linha=29)]
+                                                                                ),
+                                                                            prox=
+                                                                                NoInterno(op="statementList", 
+                                                                                statement=
+                                                                                    NoInterno(op="assignStatement", 
+                                                                                    id=
+                                                                                        NoFolha(op="id", valor="sOmA", linha=30),
+                                                                                    expression=
+                                                                                        NoInterno(op="expression", 
+                                                                                        oper=
+                                                                                            None,
+                                                                                        esq=
+                                                                                            NoInterno(op="multiplicative_term", 
+                                                                                            oper=
+                                                                                                "/",
+                                                                                            esq=
+                                                                                                NoInterno(op="factor", 
+                                                                                                sinal=
+                                                                                                    NoFolha(op="OPSUM", valor="+", linha=30),
+                                                                                                esq=
+                                                                                                    None,
+                                                                                                dir=
+                                                                                                    None,
+                                                                                                expression=
+                                                                                                    NoInterno(op="expression", 
+                                                                                                    oper=
+                                                                                                        None,
+                                                                                                    esq=
+                                                                                                        NoInterno(op="power_term", 
+                                                                                                        oper=
+                                                                                                            "^",
+                                                                                                        esq=
+                                                                                                            NoInterno(op="factor", 
+                                                                                                            sinal=
+                                                                                                                NoFolha(op="OPSUM", valor="+", linha=30),
+                                                                                                            esq=
+                                                                                                                None,
+                                                                                                            dir=
+                                                                                                                None,
+                                                                                                            factor=
+                                                                                                                NoFolha(op="id", valor="b", linha=30)
+                                                                                                            ),
+                                                                                                        dir=
+                                                                                                            NoInterno(op="power_term", 
+                                                                                                            oper=
+                                                                                                                "^",
+                                                                                                            esq=
+                                                                                                                NoInterno(op="factor", 
+                                                                                                                sinal=
+                                                                                                                    NoFolha(op="OPSUM", valor="+", linha=30),
+                                                                                                                esq=
+                                                                                                                    None,
+                                                                                                                dir=
+                                                                                                                    None,
+                                                                                                                factor=
+                                                                                                                    NoFolha(op="num", valor="3", linha=30)
+                                                                                                                ),
+                                                                                                            dir=
+                                                                                                                NoInterno(op="factor", 
+                                                                                                                sinal=
+                                                                                                                    NoFolha(op="OPSUM", valor="+", linha=30),
+                                                                                                                esq=
+                                                                                                                    None,
+                                                                                                                dir=
+                                                                                                                    None,
+                                                                                                                factor=
+                                                                                                                    NoFolha(op="num", valor="4", linha=30)
+                                                                                                                )
+                                                                                                            )
+                                                                                                        ),
+                                                                                                    dir=
+                                                                                                        None
+                                                                                                    )
+                                                                                                ),
+                                                                                            dir=
+                                                                                                NoInterno(op="factor", 
+                                                                                                sinal=
+                                                                                                    NoFolha(op="OPSUM", valor="+", linha=30),
+                                                                                                esq=
+                                                                                                    None,
+                                                                                                dir=
+                                                                                                    None,
+                                                                                                factor=
+                                                                                                    NoFolha(op="id", valor="a", linha=30)
+                                                                                                )
+                                                                                            ),
+                                                                                        dir=
+                                                                                            None
+                                                                                        )
+                                                                                    ),
+                                                                                prox=
+                                                                                    None
+                                                                                )
+                                                                            )
+                                                                        )
+                                                                    )
+                                                                ),
+                                                            prox=
+                                                                None
+                                                            )
+                                                        )
+                                                    )
+                                                ),
+                                            prox=
+                                                None
+                                            )
+                                        )
+                                    )
+                                ),
+                            prox=
+                                NoInterno(op="statementList", 
+                                statement=
+                                    NoInterno(op="assignStatement", 
+                                    id=
+                                        NoFolha(op="id", valor="a", linha=34),
+                                    inStatement=
+                                        NoInterno(op="FUNCIN", 
+                                        valor=
+                                            "aleatorio",
+                                        linha=
+                                            34,
+                                        params=
+                                            [NoInterno(op="factor", sinal=NoFolha(op="OPSUM", valor="-", linha=34), esq=NoInterno(op="factor", sinal=NoFolha(op="OPSUM", valor="+", linha=34), esq=None, dir=None, factor=NoFolha(op="num", valor="10", linha=34)), dir=None), NoInterno(op="factor", sinal=NoFolha(op="OPSUM", valor="+", linha=34), esq=None, dir=None, factor=NoFolha(op="num", valor="2", linha=34))]
+                                        )
+                                    ),
+                                prox=
+                                    None
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    ),
+declarations=
+    NoInterno(op="varDeclarationList", 
+    varDeclaration=
+        NoInterno(op="varDeclaration", 
+        type=
+            NoFolha(op="type", valor="numero", linha=4),
+        identifierList=
+            NoInterno(op="identifierList", 
+            id=
+                NoFolha(op="id", valor="a", linha=4),
+            prox=
+                NoInterno(op="identifierList", 
+                id=
+                    NoFolha(op="id", valor="b", linha=4),
+                prox=
+                    NoInterno(op="identifierList", 
+                    id=
+                        NoFolha(op="id", valor="soma", linha=4),
+                    prox=
+                        None
+                    )
+                )
+            )
+        ),
+    prox=
+        NoInterno(op="varDeclarationList", 
+        varDeclaration=
+            NoInterno(op="varDeclaration", 
+            type=
+                NoFolha(op="type", valor="binario", linha=5),
+            identifierList=
+                NoInterno(op="identifierList", 
+                id=
+                    NoFolha(op="id", valor="c", linha=5),
+                prox=
+                    NoInterno(op="identifierList", 
+                    id=
+                        NoFolha(op="id", valor="aconteceu", linha=5),
+                    prox=
+                        None
+                    )
+                )
+            ),
+        prox=
+            NoInterno(op="varDeclarationList", 
+            varDeclaration=
+                NoInterno(op="varDeclaration", 
+                type=
+                    NoFolha(op="type", valor="texto", linha=6),
+                identifierList=
+                    NoInterno(op="identifierList", 
+                    id=
+                        NoFolha(op="id", valor="s", linha=6),
+                    prox=
+                        None
+                    )
+                ),
+            prox=
+                None
+            )
+        )
+    ),
+id=
+    NoFolha(op="id", valor="Este programa é mais complexo que o primeiro", linha=2)
+)

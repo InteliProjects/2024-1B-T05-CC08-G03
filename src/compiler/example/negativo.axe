@@ -1,0 +1,72 @@
+programa
+"Este programa verifica se um número é maior que 10."
+
+var
+numero x;
+
+{
+x: -2;
+}
+
+
+NoInterno(op="alg", 
+str_statement=
+    NoFolha(op="str", valor="Este programa verifica se um número é maior que 10.", linha=2),
+block=
+    NoInterno(op="block", 
+    statementList=
+        NoInterno(op="statementList", 
+        statement=
+            NoInterno(op="assignStatement", 
+            id=
+                NoFolha(op="id", valor="x", linha=8),
+            expression=
+                NoInterno(op="expression", 
+                oper=
+                    None,
+                esq=
+                    NoInterno(op="factor", 
+                    sinal=
+                        NoFolha(op="OPSUM", valor="-", linha=8),
+                    esq=
+                        NoInterno(op="factor", 
+                        sinal=
+                            NoFolha(op="OPSUM", valor="+", linha=8),
+                        esq=
+                            None,
+                        dir=
+                            None,
+                        factor=
+                            NoFolha(op="num", valor="2", linha=8)
+                        ),
+                    dir=
+                        None
+                    ),
+                dir=
+                    None
+                )
+            ),
+        prox=
+            None
+        )
+    ),
+declarations=
+    NoInterno(op="varDeclarationList", 
+    varDeclaration=
+        NoInterno(op="varDeclaration", 
+        type=
+            NoFolha(op="type", valor="numero", linha=5),
+        identifierList=
+            NoInterno(op="identifierList", 
+            id=
+                NoFolha(op="id", valor="x", linha=5),
+            prox=
+                None
+            )
+        ),
+    prox=
+        None
+    ),
+id=
+    NoFolha(op="id", valor="Este programa verifica se um número é maior que 10.", linha=2)
+)

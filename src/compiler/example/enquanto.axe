@@ -1,0 +1,15 @@
+programa
+"Este programa imprime os números de 1 a 10."
+
+var
+numero i;
+binario a;
+
+{
+i: 1;
+a: i>2;
+enquanto (i <= 10){
+mostrar(i);
+i: i + 1;
+}
+}

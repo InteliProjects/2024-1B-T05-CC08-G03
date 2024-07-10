@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página para Testar as funções</title>
+</head>
+<body>
+    <h1>Teste da função Ler Número</h1>
+    <button onclick="lerNumero()">Escolha um Número</button>
+    <p id="Resultado"></p>
+
+    <h1>Teste da função Ler Binário</h1>
+    <button onclick="lerBinario()">Verdadeiro ou Falso</button>
+    <p id="ResultadoBinario"></p>
+
+    <h1>Teste da função Ler Botão que foi Pressionado</h1>
+    <p id="ResultadoKey"></p>
+
+    <h1>Teste da função Consultar</h1>
+    <button id="consultaBtn">Consulte aqui</button>
+    <p id="ResultadoConsulta"></p>
+
+    <h1>Testando Função Criar Figuras</h1>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000;"></canvas>
+    <button id="btnCirculo">Desenhar Círculo</button>
+    <button id="btnQuadrado">Desenhar Quadrado</button>
+    <button id="btnTriangulo">Desenhar Triângulo</button>
+
+    <h1>Criar Imagem no Canvas</h1>
+    <canvas id="myCanvasArquivo" width="800" height="600" style="border:1px solid #000;"></canvas>
+
+    <h1>Testar Função de Número Aleatório</h1>
+    <label for="minNumber">Número mínimo:</label>
+    <input type="number" id="minNumber" value="1">
+    <label for="maxNumber">Número máximo:</label>
+    <input type="number" id="maxNumber" value="100">
+    <button onclick="aleatorio()">Gerar Número</button>
+    <p id="resultadoAleatorio"></p>
+
+    <script src="../functions/ler_numero.js"></script>
+    <script src="../functions/ler_binario.js"></script>
+    <script src="../functions/ler.js"></script>
+    <script src="../functions/criar_figura.js"></script>
+    <script src="../functions/criar_imagem.js"></script>
+    <script src="../functions/aleatorio.js"></script>
+</body>
+</html>

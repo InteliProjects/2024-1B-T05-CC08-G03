@@ -1,0 +1,70 @@
+programa "Dinâmica do jogo"
+var
+numero objeto0;
+numero objeto1;
+numero objeto2;
+numero objeto3;
+numero objeto4;
+numero objeto5;
+numero objeto6;
+numero objeto7;
+numero objeto8;
+numero quadrante;
+
+{
+objeto0: criar_imagem("doImagem.png", 50, 30);
+objeto1: criar_imagem("reImagem.png", 200, 30);
+objeto2: criar_imagem("miImagem.png", 350, 30);
+objeto3: criar_imagem("faImagem.png", 500, 30);
+objeto4: criar_imagem("solImagem.png", 650, 30);
+objeto5: criar_imagem("laImagem.png", 800, 30);
+objeto6: criar_imagem("siImagem.png", 950, 30);
+
+
+enquanto(v){
+quadrante: consultar();
+
+se (quadrante = 1) {
+reverter_destaque();
+destacar(objeto0);
+tocar("doFabio.ogg");
+}
+se (quadrante = 2) {
+reverter_destaque();
+destacar(objeto1);
+tocar("reFabio.ogg");
+}
+se (quadrante = 3) {
+reverter_destaque();
+destacar(objeto2);
+tocar("miFabio.ogg");
+}
+se (quadrante = 4) {
+reverter_destaque();
+destacar(objeto3);
+tocar("faFabio.ogg");
+}
+se (quadrante = 5) {
+reverter_destaque();
+destacar(objeto4);
+tocar("solFabio.ogg");
+}
+se (quadrante = 6) {
+reverter_destaque();
+destacar(objeto5);
+tocar("laFabio.ogg");
+}
+se (quadrante = 7) {
+reverter_destaque();
+destacar(objeto6);
+tocar("siFabio.ogg");
+}
+se (quadrante = 8) {
+tocar("uepaGui.ogg");
+}
+se (quadrante = 9) {
+tocar("aplausos.mp3");
+}
+}
+
+}

@@ -1,0 +1,133 @@
+programa "Descrição do programa"
+var
+    texto a, b, c;
+    numero x, y;
+{
+   mostrar("Ola mundo!");
+   se (v) {
+      esperar(10+1);
+      se (f) {
+          tocar("musica.mp3");
+      }
+    } senao {
+        mostrar(20);
+    }
+   limpar();
+
+
+
+arvore = NoInterno(
+    op="alg",
+    id=NoFolha(op="id", valor="Descrição do programa", linha=1),
+    declarations=None,
+    block=NoInterno(
+        op="block",
+        statementList=NoInterno(
+            op="statementList",
+            statement=NoInterno(
+                op="FUNCOUT",
+                linha=4,
+                params=[NoFolha(op="str", valor="Ola mundo!", linha=4)],
+                valor="mostrar"
+            ),
+            prox=NoInterno(
+                op="statementList",
+                statement=NoInterno(
+                    op="ifStatement",
+                    expression=NoInterno(
+                        op="expression",
+                        esq=NoInterno(
+                            op="factor",
+                            sinal=NoFolha(op="OPSUM", valor="+", linha=5),
+                            factor=NoFolha(op="log", valor="v", linha=5)
+                        ),
+                        oper=None
+                    ),
+                    blockIf=NoInterno(
+                        op="block",
+                        statementList=NoInterno(
+                            op="statementList",
+                            statement=NoInterno(
+                                op="FUNCOUT",
+                                linha=6,
+                                params=[NoInterno(
+                                    op="sum_expression",
+                                    esq=NoInterno(
+                                        op="factor",
+                                        sinal=NoFolha(op="OPSUM", valor="+", linha=6),
+                                        factor=NoFolha(op="num", valor="10", linha=6)
+                                    ),
+                                    dir=NoInterno(
+                                        op="factor",
+                                        sinal=NoFolha(op="OPSUM", valor="+", linha=6),
+                                        factor=NoFolha(op="num", valor="1", linha=6)
+                                    ),
+                                    oper="+"
+                                )],
+                                valor="esperar"
+                            ),
+                            prox=NoInterno(
+                                op="statementList",
+                                statement=NoInterno(
+                                    op="ifStatement",
+                                    expression=NoInterno(
+                                        op="expression",
+                                        esq=NoInterno(
+                                            op="factor",
+                                            sinal=NoFolha(op="OPSUM", valor="+", linha=7),
+                                            factor=NoFolha(op="log", valor="f", linha=7)
+                                        ),
+                                        oper=None
+                                    ),
+                                    blockIf=NoInterno(
+                                        op="block",
+                                        statementList=NoInterno(
+                                            op="statementList",
+                                            statement=NoInterno(
+                                                op="FUNCOUT",
+                                                linha=8,
+                                                params=[NoFolha(op="str", valor="musica.mp3", linha=8)],
+                                                valor="tocar"
+                                            ),
+                                            prox=None
+                                        )
+                                    ),
+                                    blockElse=None
+                                ),
+                                prox=None
+                            )
+                        )
+                    ),
+                    blockElse=NoInterno(
+                        op="block",
+                        statementList=NoInterno(
+                            op="statementList",
+                            statement=NoInterno(
+                                op="FUNCOUT",
+                                linha=11,
+                                params=[NoInterno(
+                                    op="factor",
+                                    sinal=NoFolha(op="OPSUM", valor="+", linha=11),
+                                    factor=NoFolha(op="num", valor="20", linha=11)
+                                )],
+                                valor="mostrar"
+                            ),
+                            prox=None
+                        )
+                    )
+                ),
+                prox=NoInterno(
+                    op="statementList",
+                    statement=NoInterno(
+                        op="FUNCOUT",
+                        linha=13,
+                        params=[],
+                        valor="limpar"
+                    ),
+                    prox=None
+                )
+            )
+        )
+    )
+)
+

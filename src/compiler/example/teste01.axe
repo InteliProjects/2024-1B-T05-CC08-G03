@@ -1,0 +1,13 @@
+programa "Dinâmica do jogo"
+var
+numero objeto0;
+numero objeto1;
+numero quadrante;
+{
+objeto0: criar_imagem("cachorro.webp", 2, 2);
+enquanto (quadrante != 3) { 
+    quadrante: quadrante + 1;
+}
+}
+
+

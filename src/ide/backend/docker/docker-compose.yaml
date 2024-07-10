@@ -1,0 +1,10 @@
+---
+services:
+  app:
+    container_name: axe-backend
+    image: guilhermenl/axe-backend:latest
+    environment:
+    - PORT=3001
+    ports:
+    - "3001:3001"
+
